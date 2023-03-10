@@ -1,0 +1,8 @@
+main {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 300px 1fr;
+}
+.content {
+  padding: 20px;
+}

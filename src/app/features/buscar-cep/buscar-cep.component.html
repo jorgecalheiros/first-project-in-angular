@@ -1,0 +1,16 @@
+<div class="card">
+  <h2>Buscar localização pelo o CEP</h2>
+  <br />
+  <p>
+    utilizado a api do governo
+    <strong>https://viacep.com.br/ws/00000000/json/</strong>
+  </p>
+</div>
+<div class="card">
+  <app-input-buscar-cep (newEvent)="getData($event)"></app-input-buscar-cep>
+</div>
+<div class="card">
+  <app-container-mostrar-localizacao
+    [location]="location"
+  ></app-container-mostrar-localizacao>
+</div>

@@ -1,0 +1,11 @@
+.container-item {
+  padding: 10px 5px;
+  border-bottom: 2px solid silver;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.container-item .value {
+  color: gray;
+}

@@ -1,0 +1,33 @@
+<app-input-api [(value)]="urlApi" (resquestApi)="getResponse()"></app-input-api>
+<br />
+<div class="container-input-color">
+  <div class="group-input-color">
+    <label for="background" class="label-color">Cor de fundo:</label><br />
+    <input
+      type="color"
+      id="background"
+      [value]="backgroundColor"
+      #input
+      (input)="setColorBackground(input.value)"
+      class="input-color"
+    />
+  </div>
+  <div class="group-input-color">
+    <label for="background" class="label-color">Cor da fonte:</label><br />
+    <input
+      type="color"
+      [value]="fontColor"
+      #font
+      (input)="setColorFont(font.value)"
+      class="input-color"
+    />
+  </div>
+</div>
+<br />
+<div
+  class="container-json"
+  [style.background]="backgroundColor"
+  [style.color]="fontColor"
+>
+  <pre><p>{{ response | json }}</p></pre>
+</div>

@@ -1,0 +1,15 @@
+<div class="container-form">
+  <div class="container-input">
+    <input
+      type="number"
+      placeholder="Informe seu cep:00000000"
+      id="cep"
+      [maxLength]="8"
+      [minLength]="8"
+      #input
+    />
+  </div>
+  <button class="button-submit-buscar-cep" (click)="setValueInput(input.value)">
+    <mat-icon>search</mat-icon>Buscar
+  </button>
+</div>

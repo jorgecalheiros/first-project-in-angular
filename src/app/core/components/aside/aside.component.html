@@ -1,0 +1,52 @@
+<aside class="navbar">
+  <h1 class="title-navbar">Angular App</h1>
+  <nav>
+    <ul class="list-navbar">
+      <a
+        routerLink="/home"
+        ariaCurrentWhenActive="page"
+        class="itemlistlink-navbar"
+      >
+        <li class="itemlist-navbar" [routerLinkActive]="'active'">
+          <mat-icon>home</mat-icon><span>Principal</span>
+        </li>
+      </a>
+      <a
+        routerLink="/buscar/cep"
+        ariaCurrentWhenActive="page"
+        class="itemlistlink-navbar"
+      >
+        <li class="itemlist-navbar" [routerLinkActive]="'active'">
+          <mat-icon>local_library</mat-icon><span>Buscar cep</span>
+        </li>
+      </a>
+      <a
+        routerLink="/jsonplaceholder"
+        ariaCurrentWhenActive="page"
+        class="itemlistlink-navbar"
+      >
+        <li class="itemlist-navbar" [routerLinkActive]="'active'">
+          <mat-icon>local_post_office</mat-icon><span>Json Placeholder</span>
+        </li>
+      </a>
+      <a
+        routerLink="/teste/api"
+        ariaCurrentWhenActive="page"
+        class="itemlistlink-navbar"
+      >
+        <li class="itemlist-navbar" [routerLinkActive]="'active'">
+          <mat-icon>code</mat-icon><span>Teste api</span>
+        </li>
+      </a>
+      <a
+        routerLink="/localstorage"
+        ariaCurrentWhenActive="page"
+        class="itemlistlink-navbar"
+      >
+        <li class="itemlist-navbar" [routerLinkActive]="'active'">
+          <mat-icon>storage</mat-icon><span>Localstorage</span>
+        </li>
+      </a>
+    </ul>
+  </nav>
+</aside>

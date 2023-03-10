@@ -1,0 +1,32 @@
+<div class="container-form">
+  <div class="group">
+    <label for="key">Chave:</label>
+    <input
+      type="text"
+      id="key"
+      [value]="inputValue"
+      placeholder="Chave..."
+      class="input-form"
+      #key
+      (input)="setValueInput(key.value)"
+    />
+  </div>
+  <br />
+  <div>
+    <label for="data">Informações</label>
+    <textarea
+      name="textarea"
+      id="data"
+      cols="30"
+      rows="5"
+      placeholder="..."
+      [value]="textValue"
+      class="input-form"
+      #data
+      (input)="setValueText(data.value)"
+    ></textarea>
+  </div>
+  <div class="container-buttons">
+    <button class="create" (click)="create()">Criar</button>
+  </div>
+</div>

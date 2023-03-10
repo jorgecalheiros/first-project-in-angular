@@ -1,0 +1,24 @@
+<div class="container-posts">
+  <table>
+    <thead>
+      <tr>
+        <th>ID do usuário</th>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>Conteudo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of listPosts">
+        <td>{{ post.userId }}</td>
+        <td>{{ post.id }}</td>
+        <td>{{ post.title }}</td>
+        <td>
+          <div class="container-content">
+            {{ post.body }}
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

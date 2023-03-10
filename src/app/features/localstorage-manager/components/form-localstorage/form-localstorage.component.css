@@ -1,0 +1,21 @@
+.input-form {
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  width: 98%;
+}
+.container-buttons .create {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid green;
+  transition: all 100ms linear;
+}
+.create:hover {
+  transform: scale(1.1);
+  background-color: rgb(2, 189, 2);
+}

@@ -1,0 +1,32 @@
+<div class="container-list">
+  <table>
+    <thead>
+      <tr>
+        <th>Chaves</th>
+        <th>Informações</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <td>{{ item.key }}</td>
+        <td>
+          <input
+            type="text"
+            [value]="item.data"
+            class="input-table-data"
+            #data
+          />
+        </td>
+        <td class="container-button">
+          <button class="button excluir" (click)="destroy(item.key)">
+            Excluir
+          </button>
+          <button class="button editar" (click)="update(item.key, data.value)">
+            Editar informações
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

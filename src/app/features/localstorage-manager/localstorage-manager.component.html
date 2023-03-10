@@ -1,0 +1,21 @@
+<div class="card">
+  <h2>Local Storage Manager</h2>
+</div>
+<div class="card">
+  <h3>Formulário</h3>
+
+  <app-form-localstorage
+    [(inputValue)]="key"
+    [(textValue)]="data"
+    (buttonCreate)="create()"
+  ></app-form-localstorage>
+</div>
+<div class="card">
+  <h3>Lista das chaves</h3>
+  <br />
+  <app-list-localstorage
+    [list]="listData"
+    (deleteButton)="deleteKey($event)"
+    (updateButton)="updateData($event)"
+  ></app-list-localstorage>
+</div>
